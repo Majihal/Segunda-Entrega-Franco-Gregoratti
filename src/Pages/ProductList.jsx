@@ -28,25 +28,3 @@ const ProductList = () => {
 )}
 
 export default ProductList
-
-
-
-// const ProductList = () => {
-//   let { categoriaSeleccionada } = useParams();
-
-//   const productosPorCategoria = listOfProducts.filter(item => item.category == categoriaSeleccionada) 
-
-//   return (
-   
-//     <div className='Products'>
-//       <NavBar/>
-//       <h1>Lista de Productos</h1>
-//       {productosPorCategoria.map(item => (
-//         <div key={item.id}>
-//           <p >{item.name}</p>
-//           <Link to={"/categorias/buzos/" +  item.id}>ver más</Link>
-//         </div>
-//       ))}
-//     </div>
-//   )
-// }
