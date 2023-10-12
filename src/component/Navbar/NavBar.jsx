@@ -13,9 +13,9 @@ function NavBar() {
           <Link to="/">White Tower</Link>
           </Typography>
           <ul className='containerUl'>
-            <Link to= "/"><li>Home</li></Link>
-            <Link to= "/categorias"><li>Categorias</li></Link>
-            <Link to= "/contacto"><li>Contacto</li></Link>
+            <Link to= "/"><Typography component="li">Home</Typography></Link>
+            <Link to= "/categorias"><Typography component="li">Categorias</Typography></Link>
+            <Link to= "/contacto"><Typography component="li">Contacto</Typography></Link>
           </ul>
           <CartWidget />
         </Toolbar>       

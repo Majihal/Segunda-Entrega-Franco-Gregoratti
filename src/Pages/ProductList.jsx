@@ -4,6 +4,7 @@ import {listOfProducts} from  "../../db.js"
 import NavBar from '../component/Navbar/NavBar.jsx';
 import "./ProductList.css"
 import CardComponent from "../component/CardComponent/CardComponent.jsx"
+import { Typography } from '@mui/material';
 
 const ProductList = () => {
   let { categoriaSeleccionada } = useParams();
@@ -13,7 +14,7 @@ const ProductList = () => {
   return (
     <div>
       <NavBar/>
-      <h1 className='Products'>Lista de Productos</h1>
+      <Typography variant= "h4" className='Products'>Lista de Productos</Typography>
       <div className='Products'>
         {productosPorCategoria.map(item => (
         <div>  

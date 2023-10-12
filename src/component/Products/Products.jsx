@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import {Link} from "react-router-dom"
 
 import "./Products.css"
 
@@ -24,9 +25,11 @@ export const ProductsItem = ({data} ) => {
         <Typography  variant="h5" color="text.primary">
           {data.price}
         </Typography>
-        <Typography variant="body" color="text.secondary">
-        {data.category}
+        <Link to={`/categorias/${data.category}`}>
+          <Typography variant="body1" color="text.primary" paddingTop= "20px">
+          Volver a {data.category}
         </Typography>
+        </Link>
        </CardContent>
     </CardActionArea>
   </Card>

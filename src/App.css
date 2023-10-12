@@ -4,5 +4,14 @@
 }
 
 body{
-  background-color: rgb(3, 2, 26);
+  background-color:#A6c1FF;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+a:visited{
+  color: inherit;
 }

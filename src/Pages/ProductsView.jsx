@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import {listOfProducts} from  "../../db.js"
 import "./ProductList.css"
 import ".././component/Products/Products.css"
+import { Typography } from '@mui/material';
 
 const ProductsView = () => {
   
@@ -13,7 +14,7 @@ const ProductsView = () => {
   return (
     <div>
       <NavBar/>
-      <h1 className='Prod'>Producto</h1>
+      <Typography variant= "h4" className='Prod'>Producto</Typography>
       <div className='Products'>
       <ProductsItem data={product}/>
       </div>

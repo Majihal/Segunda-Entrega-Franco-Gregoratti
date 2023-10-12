@@ -1,5 +1,6 @@
 .container{
   justify-content: end;
+  background-color: #FC7B7B ;
 
 }
 
@@ -8,4 +9,6 @@
   display: flex;
   list-style-type: none;
   gap: 4rem;
+ 
 }
+
