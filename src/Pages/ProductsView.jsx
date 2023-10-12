@@ -3,7 +3,8 @@ import ProductsItem from '../component/Products/Products'
 import NavBar from '../component/Navbar/NavBar'
 import { useParams } from 'react-router-dom';
 import {listOfProducts} from  "../../db.js"
-import CardComponent from "../component/CardComponent/CardComponent"
+import "./ProductList.css"
+import ".././component/Products/Products.css"
 
 const ProductsView = () => {
   
@@ -12,7 +13,10 @@ const ProductsView = () => {
   return (
     <div>
       <NavBar/>
-      <ProductsItem data={product} />
+      <h1 className='Prod'>Producto</h1>
+      <div className='Products'>
+      <ProductsItem data={product}/>
+      </div>
       </div>
   )
 }

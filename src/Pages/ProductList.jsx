@@ -16,7 +16,7 @@ const ProductList = () => {
       <h1 className='Products'>Lista de Productos</h1>
       <div className='Products'>
         {productosPorCategoria.map(item => (
-        <div className='Section'>  
+        <div>  
         <Link to={"/categorias/buzos/" +  item.id}>
           <CardComponent className= "Products" key={item.id} item={item}/>
         </Link>  
